@@ -1,0 +1,112 @@
+
+body {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJABAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDEBUAAANooIKgoKIIAooCAAAAAigIKgiiCigIAAACqUBBRABFFRAEABRUURUVFARUAAAVAFAAAARQEAVABAAAVFUAEAFFQAAAEAVAAUAQAAAAAAURQAAAAKioAAoAIgoAioqhgCKAAAAIoCAAAAAAAAAAACCoCqAAACCgAAAAAAAAAAAAAAIKigAgAAAAAAACAAAAqgABABFKCKgCgoICg5VBUUBFAAAAQAAAQAFABAAAAAAFEBVAAABBQAAFEAEUUAAAggAKACCAAACAACKKACAAoAAoCKAAAAAAAAAqiCogAoIBQAFBFRAAVAAABAAAAAAAVAVUVAUACAAAAKgoqKiAAAAAioAAqAAAAAAACKAAAKACIoiigAAKCAoP/2Q==');
+    background-position: center;
+    color: white;
+}
+form {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.card {
+    backdrop-filter: blur(10px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;  /* Solid Black */
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;  /* Text white */
+}
+
+.form-control {
+    background-color: rgba(50, 50, 50, 1) !important; /* Dark Grey */
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Styling form inputs */
+.form-control {
+    background-color: white; /* Transparent input background */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Form labels */
+.form-label {
+    color: white;
+}
+
+/* Styling the submit button */
+.btn-primary {
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+/* Styling the radio buttons & checkboxes */
+.form-check-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.form-select {
+    background-color:rgba(255, 255, 255, 0.2);  /* White dropdown */
+    color: black !important;  /* Black text */
+    border: 1px solid #ccc;
+}
+
+.form-select:focus {
+    background-color: white !important;
+    color: white !important;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+::placeholder {
+    color: white !important;
+  }
+  .custom-dropdown {
+    background-color: rgba(70, 70, 70, 0.8);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-dropdown option:first-child {
+    color: white !important;  
+    font-style:none; 
+}
+
+.custom-dropdown:focus {
+    background-color: black !important; 
+    color: white !important;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-check-input {
+    transform: scale(1); /* Checkbox size bada karne ke liye */
+}
+
+
+
+

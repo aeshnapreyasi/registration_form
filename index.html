@@ -2,253 +2,351 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body class="">
+  <form>
     <div class="container mt-5">
-        <form>
-            <div id="header-text">
-                
-                <h2 class="text-center mb-4 text-decoration-underline text-white">Startup Registration Form</h2>
+      <form>
+        <div id="header-text" class="text-center text-white w-full">
+          <h2 class="text-decoration-underline mb-5">Startup Registration Form</h2>
 
-                <div class="container mt-3">
-                    <div class="progress" style="height: 10px;">
-                        <div id="progress-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+          <!-- Progress Bar -->
+          <div class="container mt-4 position-relative">
+            <div class="progress-labels text-white d-flex justify-content-between px-2"
+              style="position: absolute; width: 100%; top: -25px;">
+              <span>Personal Details</span>
+              <span>Startup Details</span>
+              <span>Business Details</span>
+              <span>Facility Required</span>
             </div>
-                
+
+            <div class="progress">
+              <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%; background: #374151;"
+                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
+          </div>
 
-            <!-- Personal Details Section -->
-            <section class="card shadow-lg">
-                <div class="card-body">
-                    <h4 class="card-title mb-4 text-decoration-underline">Personal Details</h4>
 
-                    <div class="row">
-                        <!-- Left Column -->
-                        <div class="col-md-6">
-                            <div class="mb-4">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Full Name" />
-                            </div>
+        </div>
 
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email ID</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email" />
-                            </div>
+        <!-- Personal Details Section -->
+        <section class="card shadow-lg" id="section1">
+          <div class="card-body">
+            <h4 class="card-title mb-4 text-decoration-underline">
+              Personal Details
+            </h4>
 
-                            <div class="mb-3">
-                                <label for="department" class="form-label">Department/Course</label>
-                                <select class="form-select form-control custom-dropdown" id="department" placeholder="Select Department/Course">
-                                    <option value="" selected disabled hidden>Select Department/Course</option>
-                                    <option value="A">Subject-1</option>
-                                    <option value="B">Subject-2</option>
-                                    <option value="C">Subject-3</option>
-                                    <option value="D">Subject-4</option>
-                                    <option value="E">Subject-5</option>
-                                </select>
-                            </div>
-                            
-                        </div>
+            <div class="row">
+              <!-- Left Column -->
 
-                        <!-- Right Column -->
-                        <div class="col-md-6">
-                            <div class="mb-4">
-                                <label for="studentID" class="form-label">Student ID</label>
-                                <input type="text" class="form-control" id="studentID" placeholder="Student ID" />
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="phone_number" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone_number" placeholder="Phone Number" />
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="year_of_study" class="form-label">Year of Study</label>
-                                <input type="date" class="form-control" id="year_of_study"
-                                    placeholder="Year of Study" />
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="mb-4">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder required="Full Name" />
                 </div>
-            </section>
 
-            <!--Startup Details-->
-            <div class="container mt-5">
-                <section class="card shadow-lg">
-                    <div class="card-body">
-                        <h4 class="card-title mb-4 text-decoration-underline">Startup Details</h4>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email ID</label>
+                  <input type="email" class="form-control" id="email" placeholder required="Email" />
+                </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="startup_name" class="form-label">Startup Name</label>
-                                    <input type="text" class="form-control" id="startup_name">
-                                </div>
-                            </div>
+                <div class="mb-3">
+                  <label for="department" class="form-label">Department/Course</label>
+                  <select class="form-select form-control custom-dropdown" id="department" placeholder
+                    required="Select Department/Course">
+                    <option value="" selected disabled hidden>
+                      Select Department/Course
+                    </option>
+                    <option value="A">Subject-1</option>
+                    <option value="B">Subject-2</option>
+                    <option value="C">Subject-3</option>
+                    <option value="D">Subject-4</option>
+                    <option value="E">Subject-5</option>
+                  </select>
+                </div>
+              </div>
 
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="industry_sector" class="form-label">Industry Sector</label>
-                                    <input type="text" class="form-control" id="industry_sector" placeholder="health..">
-                                </div>
-                            </div>
-                        </div>
+              <!-- Right Column -->
+              <div class="col-md-6">
+                <div class="mb-4">
+                  <label for="studentID" class="form-label">Student ID</label>
+                  <input type="text" class="form-control" id="studentID" placeholder required="Student ID" />
+                </div>
 
-                        <div class="mb-2">
-                            <label for="description" class="form-label">Brief Description</label>
-                            <textarea class="form-control" id="description" rows="3"></textarea>
-                        </div>
+                <div class="mb-3">
+                  <label for="phone_number" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone_number" placeholder required="Phone Number" />
+                </div>
 
-                        <div class="mb-3">
-                            <label for="problemStatementAndSolution" class="form-label">Problem Statement And
-                                Solution</label>
-                            <textarea class="form-control" id="problemStatementAndSolution" rows="3"></textarea>
-                        </div>
+                <div class="mb-3">
+                  <label for="year_of_study" class="form-label">Year of Study</label>
+                  <input type="date" class="form-control" id="year_of_study" placeholder required="Year of Study" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="current_stage" class="form-label">Current Stage</label>
-                                    <textarea class="form-control" id="current_stage"
-                                        placeholder="Idea, Prototype, MVP, Revenue Generate"></textarea>
-                                </div>
-                            </div>
+        <!--Startup Details-->
 
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="website/socialMedia" class="form-label">Website/Social Media</label>
-                                    <input type="url" class="form-control" id="website">
-                                </div>
-                            </div>
-                        </div>
+        <div class="container mt-5">
+          <section class="card shadow-lg" id="section2">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-decoration-underline">
+                Startup Details
+              </h4>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="startup_name" class="form-label">Startup Name</label>
+                    <input type="text" class="form-control" id="startup_name" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="industry_sector" class="form-label">Industry Sector</label>
+                    <input type="text" class="form-control" id="industry_sector" placeholder required="health.." />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label for="description" class="form-label">
+                  Brief Description</label>
+                <textarea class="form-control" id required="description" rows="3"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="problemStatementAndSolution" class="form-label">Problem Statement And Solution</label>
+                <textarea class="form-control" id required="problemStatementAndSolution" rows="3"></textarea>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="current_stage" class="form-label">Current Stage</label>
+                    <textarea class="form-control" id="current_stage" placeholder
+                      required="Idea, Prototype, MVP, Revenue Generate" oninput="updateProgress()"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="website/socialMedia" class="form-label">Website/Social Media</label>
+                    <input type="url" class="form-control" id="website_socialMedia" oninput="updateProgress()" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--Buisness Details-->
+
+        <div class="container mt-5">
+          <section class="card shadow-lg" id="section3">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-decoration-underline">
+                Buisness Details
+              </h4>
+
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="checkboxId" class="form-label">Functioning Required</label>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id required="checkboxId" />
+                      </div>
                     </div>
-                </section>
-            </div>
+                  </div>
 
-            <!--Buisness Details-->
-
-            <div class="container mt-5">
-                <section class="card shadow-lg">
-                    <div class="card-body">
-                        <h4 class="card-title mb-4 text-decoration-underline">Buisness Details</h4>
-                        <div class="container mt-5">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="checkboxId" class="form-label">Functioning
-                                            Required</label>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkboxId">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="expected_investment" class="form-label">Expected
-                                            Investment</label>
-                                        <input type="text" class="form-control" id="industry_sector" placeholder=" ">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="revenue_model" class="form-label">Revenue Model</label>
-                                <textarea class="form-control" id="revenue_model" rows="3"></textarea>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="current_stage" class="form-label">Competition
-                                            Analysis</label>
-                                        <textarea class="form-control" id="current_stage"
-                                            placeholder="Existing Competior, Market Size etc.."></textarea>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="expected_investment" class="form-label">Expected Investment</label>
+                      <input type="text" class="form-control" id="industry_sector" placeholder required=" " />
                     </div>
-                </section>
-            </div>
+                  </div>
+                </div>
 
-            <!---Facility Required-->
+                <div class="mb-2">
+                  <label for="revenue_model" class="form-label">Revenue Model</label>
+                  <textarea class="form-control" id required="revenue_model" rows="3"></textarea>
+                </div>
 
-            <div class="container mt-5">
-                <section class="card shadow-lg">
-                    <div class="card-body">
-                        <h4 class="card-title mb-4 text-decoration-underline">Facility Required</h4>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="mb-3">
-                                    <label for="office_space" class="form-label">Office Space</label><br />
-
-                                    <div class="form-check form-switch default ">
-                                        <label class="form-check-label" for="flexSwitchCheckChecked1">Cabin</label>
-                                        <input class="form-check-input" type="checkbox" id="cabin" value="yes">
-                                    </div>
-
-                                    <div class="form-check form-switch default ">
-                                        <label class="form-check-label" for="flexSwitchCheckChecked2">Bench</label>
-                                        <input class="form-check-input" type="checkbox" id="bench" value="yes">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="mb-1">
-                                    <label for="mentorship_required" class="form-label">Mentorship Required</label>
-                                    <div class="d-flex align-items-center justify-content-center gap-2">
-                                        <label class="form-check-label" for="yes_mentorship">Yes</label>
-                                        <input class="form-check-input" type="checkbox" id="yes_mentorship" value="yes">
-                            
-                                        <input class="form-check-input" type="checkbox" id="no_mentorship" value="no">
-                                        <label class="form-check-label" for="no_mentorship">No</label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-
-                            <div class="col-md-5">
-                                <div class="mb-3">
-                                    <label for="mentorship_required" class="form-label">Mentorship Required</label>
-                                    <div class="d-flex align-items-center justify-content-center gap-1">
-                                        <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input me-1" type="checkbox" id="yes_mentorship" value="yes">
-                                            <label class="form-check-label" for="yes_mentorship">Yes</label>
-                                        </div>
-                                        <div class="form-check d-flex align-items-center">
-                                            <input class="form-check-input me-1" type="checkbox" id="no_mentorship" value="no">
-                                            <label class="form-check-label" for="no_mentorship">No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="current_stage" class="form-label">Competition Analysis</label>
+                      <textarea class="form-control" id="current_stage" placeholder
+                        required="Existing Competior, Market Size etc.." oninput="updateProgress()"></textarea>
                     </div>
-                </section>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
+        </div>
 
-            <!--Submit button-->
+        <!---Facility Required-->
+        <div class="container mt-5">
+          <section class="card shadow-lg" id="section4">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-decoration-underline">Facility Required</h4>
 
-            <div class="container mt-5 mb-5 text-center">
-                <button type="submit" class="btn-primary">Submit Application</button>
+              <div class="row d-flex align-items-center justify-content-between">
+
+                <!-- Office Space Section -->
+
+                <div class="col-md-4 d-flex flex-column align-items-start">
+                  <label class="form-label fw-bold mb-2">Office Space:</label>
+                  <div class="d-flex gap-3">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="cabin">
+                      <label class="form-check-label" for="cabin">Cabin</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="bench">
+                      <label class="form-check-label" for="bench">Bench</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mentorship Required Section -->
+                <div class="col-md-4 d-flex flex-column align-items-start">
+                  <label class="form-label fw-bold mb-2">Mentorship Required</label>
+                  <div class="d-flex gap-3">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input mentorship-switch" type="checkbox" id="yes_mentorship">
+                      <label class="form-check-label" for="yes_mentorship">Yes</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input mentorship-switch" type="checkbox" id="no_mentorship">
+                      <label class="form-check-label" for="no_mentorship">No</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Networking Support Section -->
+                <div class="col-md-4 d-flex flex-column align-items-start">
+                  <label class="form-label fw-bold mb-2">Networking Support</label>
+                  <div class="d-flex gap-3">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input facility-switch" type="checkbox" id="additional_yes">
+                      <label class="form-check-label" for="additional_yes">Yes</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input facility-switch" type="checkbox" id="additional_no">
+                      <label class="form-check-label" for="additional_no">No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
-        </form>
+          </section>
+        </div>
+
+   <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // Toggle logic for switches (Yes/No)
+            document.querySelectorAll(".mentorship-switch").forEach(input => {
+              input.addEventListener("change", function () {
+                if (this.checked) {
+                  document.querySelectorAll(".mentorship-switch").forEach(other => {
+                    if (other !== this) other.checked = false;
+                  });
+                }
+              });
+            });
+
+            document.querySelectorAll(".facility-switch").forEach(input => {
+              input.addEventListener("change", function () {
+                if (this.checked) {
+                  document.querySelectorAll(".facility-switch").forEach(other => {
+                    if (other !== this) other.checked = false;
+                  });
+                }
+              });
+            });
+          });
+</script>
+  </div>
     </div>
+    </section>
+    </div>
+
+    <script>
+      function toggleExclusive(checkedId, uncheckedId) {
+        let checkedElement = document.getElementById(checkedId);
+        let uncheckedElement = document.getElementById(uncheckedId);
+
+        if (checkedElement.checked) {
+          uncheckedElement.checked = false;
+        }
+      }
+    </script>
+
+    <!--Submit button-->
+
+    <div class="container mt-5 mb-5 text-center">
+      <button type="submit" class="btn-primary" onclick="updateProgress()">Submit Application</button>
+    </div>
+  </form>
+  </div>
+
+  <script>
+    function updateProgress() {
+  let sections = ["section1", "section2", "section3", "section4"];
+  let completedSections = 0;
+
+  sections.forEach(section => {
+    let inputs = document.querySelectorAll(`#${section} input, #${section} textarea, #${section} select`);
+    let isSectionFilled = true; // Assume section is filled
+
+    inputs.forEach(input => {
+      if (input.type === "checkbox" || input.type === "radio") {
+        if (!document.querySelector(`#${section} input[type="checkbox"]:checked`) &&
+            !document.querySelector(`#${section} input[type="radio"]:checked`)) {
+          isSectionFilled = false; // If no checkbox/radio is checked, section is incomplete
+        }
+      } else if (input.value.trim() === "") {
+        isSectionFilled = false; // If any text field is empty, section is incomplete
+      }
+    });
+
+    if (isSectionFilled) {
+      completedSections++;
+    }
+  });
+
+  let progress = (completedSections / sections.length) * 100;
+  let progressBar = document.getElementById("progress-bar");
+  progressBar.style.width = progress + "%";
+  progressBar.setAttribute("aria-valuenow", progress);
+
+  // Keep progress bar white
+  progressBar.style.backgroundColor = "white";
+}
+
+// Attach event listeners to all input fields to track progress
+document.querySelectorAll("input, textarea, select").forEach(input => {
+  input.addEventListener("input", updateProgress);
+});
+
+
+
+
+  </script>
 
 </body>
 

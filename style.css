@@ -1,6 +1,7 @@
 
 body {
-    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJABAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDEBUAAANooIKgoKIIAooCAAAAAigIKgiiCigIAAACqUBBRABFFRAEABRUURUVFARUAAAVAFAAAARQEAVABAAAVFUAEAFFQAAAEAVAAUAQAAAAAAURQAAAAKioAAoAIgoAioqhgCKAAAAIoCAAAAAAAAAAACCoCqAAACCgAAAAAAAAAAAAAAIKigAgAAAAAAACAAAAqgABABFKCKgCgoICg5VBUUBFAAAAQAAAQAFABAAAAAAFEBVAAABBQAAFEAEUUAAAggAKACCAAACAACKKACAAoAAoCKAAAAAAAAAqiCogAoIBQAFBFRAAVAAABAAAAAAAVAVUVAUACAAAAKgoqKiAAAAAioAAqAAAAAAACKAAAKACIoiigAAKCAoP/2Q==');
+    
+    background: linear-gradient(119.65deg, #000000 64.07%, #242424 85.4%);
     background-position: center;
     color: white;
 }
@@ -25,24 +26,18 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-/* Styling form inputs */
-.form-control {
-    background-color: white; /* Transparent input background */
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
 
-/* Placeholder color */
+
 ::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color:white !important;
 }
 
-/* Form labels */
+
 .form-label {
     color: white;
 }
 
-/* Styling the submit button */
+
 .btn-primary {
     display: inline-block;
     width: auto;
@@ -57,17 +52,18 @@ form {
 }
 
 .btn-primary:hover {
-    background-color: #555;
+   background: linear-gradient(90deg, #FFFFFF 0%, #9CA3AF 100%);
+
 }
 
-/* Styling the radio buttons & checkboxes */
+
 .form-check-input {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
 }
 .form-select {
-    background-color:rgba(255, 255, 255, 0.2);  /* White dropdown */
-    color: black !important;  /* Black text */
+    background-color:rgba(255, 255, 255, 0.2);  
+    color: black !important;  
     border: 1px solid #ccc;
 }
 
@@ -77,26 +73,24 @@ form {
     border-color: #666;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-::placeholder {
-    color: white !important;
-  }
-  .custom-dropdown {
+.custom-dropdown {
     background-color: rgba(70, 70, 70, 0.8);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .custom-dropdown option:first-child {
-    color: white !important;  
-    font-style:none; 
+    color: white !important;
+    font-style: normal;
 }
 
 .custom-dropdown:focus {
-    background-color: black !important; 
+    background-color: black !important;
     color: white !important;
     border-color: #666;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 .d-flex {
     display: flex;
     align-items: center;
@@ -104,8 +98,58 @@ form {
 }
 
 .form-check-input {
-    transform: scale(1); /* Checkbox size bada karne ke liye */
+    transform: scale(1); 
 }
+
+#header-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; 
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.progress {
+    width:100%; 
+  }
+
+.progress-container {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -25px !important;
+    width: 100%;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+
+.progress {
+    background-color: #374151 !important; 
+    height: 8px !important; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: white !important; /* White Progress */
+    transition: width 0.4s ease-in-out;
+}
+
+
+  
 
 
 
